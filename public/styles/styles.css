@@ -1,3 +1,31 @@
-a {
-  text-decoration: none;
+/* Variables. Put into separate file?*/
+:root {
+  --site-font: 'Cuprum', sans-serif;
+}
+
+/* Defaults */
+* {
+  font-family: var(--site-font);
+}
+
+/* Styles */
+body {
+    margin: 0;
+}
+nav.mainNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 10px solid darkgreen
+}
+div.navItem {
+    padding: 10px 30px;
+}
+nav.mainNav  a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+div.navItem:hover {
+    background-color: orangered;
 }

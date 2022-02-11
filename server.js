@@ -16,4 +16,8 @@ app.get('/about', function(req, res) {
 
 app.use(express.static("public"))
 
+app.get('*', function(req, res){
+  res.status(404).render('pages/error404');
+});
+
 app.listen(3000);
